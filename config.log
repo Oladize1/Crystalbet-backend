@@ -14911,3 +14911,25 @@ id
 2024-11-13 12:16:21,360 - ERROR - HTTP error at http://localhost:8000/api/bets/api/matches/: Error fetching matches.
 2024-11-13 12:16:21,384 - ERROR - HTTP error at http://localhost:8000/api/bets/api/matches/: Error fetching matches.
 2024-11-13 12:16:40,563 - INFO - MongoDB connection closed.
+2024-12-13 10:45:32,163 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-13 10:45:32,183 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-13 10:45:32,184 - INFO - SECRET_KEY loaded successfully
+2024-12-13 10:45:32,186 - INFO - ALGORITHM set to: HS256
+2024-12-13 10:45:32,187 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-13 10:45:32,188 - INFO - MONGO_URI set to: mongodb+srv://okem:crystalbet123@cluster0.ybutb.mongodb.net/crystalbet?retryWrites=true&w=majority&appName=Cluster0
+2024-12-13 10:45:32,189 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-13 10:45:32,190 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-13 10:45:32,192 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-13 10:45:32,195 - INFO - ENVIRONMENT set to: development
+2024-12-13 10:45:32,196 - INFO - Configuration loaded successfully
+2024-12-13 10:53:28,291 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-13 10:53:28,292 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-13 10:53:28,293 - INFO - SECRET_KEY loaded successfully
+2024-12-13 10:53:28,294 - INFO - ALGORITHM set to: HS256
+2024-12-13 10:53:28,294 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-13 10:53:28,295 - INFO - MONGO_URI set to: mongodb+srv://okem:crystalbet123@cluster0.ybutb.mongodb.net/crystalbet?retryWrites=true&w=majority&appName=Cluster0
+2024-12-13 10:53:28,296 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-13 10:53:28,296 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-13 10:53:28,297 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-13 10:53:28,298 - INFO - ENVIRONMENT set to: development
+2024-12-13 10:53:28,299 - INFO - Configuration loaded successfully

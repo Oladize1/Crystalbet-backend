@@ -1,4 +1,4 @@
-from pydantic_settings import BaseSettings, SettingsConfigDict  # Adjust import for Pydantic v2
+from pydantic_settings import BaseSettings  # Adjust import for Pydantic v2
 from dotenv import load_dotenv
 import logging
 import bcrypt
@@ -19,14 +19,9 @@ load_dotenv()
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler("config.log"),
-    ]
+    handlers=[logging.StreamHandler(), logging.FileHandler("config.log")],
 )
 logger = logging.getLogger(__name__)
-
-from typing import Optional
 
 class Settings(BaseSettings):
     # App-related settings
@@ -60,8 +55,11 @@ class Settings(BaseSettings):
     MAIL_TLS: bool
     MAIL_SSL: bool
 
-    # Pydantic v2 config (replaces `class Config` in v1)
-    model_config = SettingsConfigDict(env_file=".env")
+    # Pydantic v2 config (use Config class directly, no model_config)
+    class Config:
+        env_file = ".env"
+        env_file_encoding = "utf-8"
+
 # Initialize the settings object
 settings = Settings()
 

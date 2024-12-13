@@ -3,6 +3,7 @@ from typing import List, Optional
 from pymongo.collection import Collection
 from bson import ObjectId
 from pydantic import BaseModel, Field
+# from pydantic import BaseSettings, SettingsConfigDict
 from db.mongodb import get_db, get_collection  # Ensure you have the correct import for your MongoDB functions
 from services.auth import verify_admin
 from models.user import UserInDB
