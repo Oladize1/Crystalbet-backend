@@ -8,7 +8,7 @@ from db.mongodb import init_db, close_db, get_collection
 from core.config import settings
 from logging_config import setup_logging, logger
 import asyncio
-import traceback
+import traceback,os
 
 # Import routers
 from api.auth import router as auth_router
@@ -151,3 +151,9 @@ async def get_live_bets_data():
     collection = await get_collection("live_bets")
     live_bets = await collection.find().to_list(100)  # Fetch live bets data asynchronously
     return live_bets
+
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 10000))  # Default to 10000 if PORT is not set
+    uvicorn.run(app, host="0.0.0.0", port=port)
