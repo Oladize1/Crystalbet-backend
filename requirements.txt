@@ -13,11 +13,11 @@ email_validator==2.1.1
 fastapi==0.111.0
 fastapi-cli==0.0.4
 filelock==3.14.0
-Flask==3.0.3
-Flask-JWT
-Flask-JWT-Extended
-Flask-Login==0.6.3
-Flask-PyMongo==2.3.0
+# Flask==3.0.3
+# Flask-JWT
+# Flask-JWT-Extended
+# Flask-Login==0.6.3
+# Flask-PyMongo==2.3.0
 h11==0.14.0
 httpcore==1.0.5
 httptools==0.6.1
