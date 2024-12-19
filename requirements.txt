@@ -42,6 +42,7 @@ pymongo==4.8.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python-multipart==0.0.9
+python-jose
 pytz==2024.1
 PyYAML==6.0.1
 requests
