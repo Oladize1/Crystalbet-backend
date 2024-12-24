@@ -32,7 +32,7 @@ app = FastAPI(
     description="API for betting, casino, virtual sports, and payment management.",
     version="1.0.0",
     docs_url="/api/docs",
-    redoc_url="/api/redoc"
+    redoc_url="/redoc"
 )
 
 # CORS Middleware setup

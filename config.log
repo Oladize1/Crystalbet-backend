@@ -15010,3 +15010,59 @@ id
 2024-12-19 12:32:38,016 - WARNING - 404 Not Found at http://127.0.0.1:8000/favicon.ico
 2024-12-19 12:34:38,321 - WARNING - 404 Not Found at http://127.0.0.1:8000/docs
 2024-12-19 14:05:06,228 - INFO - MongoDB connection closed.
+2024-12-24 02:24:09,830 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-24 02:24:09,834 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-24 02:24:09,835 - INFO - SECRET_KEY loaded successfully
+2024-12-24 02:24:09,836 - INFO - ALGORITHM set to: HS256
+2024-12-24 02:24:09,836 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-24 02:24:09,837 - INFO - MONGO_URI set to: mongodb+srv://okem:crystalbet123@cluster0.ybutb.mongodb.net/crystalbet?retryWrites=true&w=majority&appName=Cluster0
+2024-12-24 02:24:09,838 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-24 02:24:09,839 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-24 02:24:09,841 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-24 02:24:09,843 - INFO - ENVIRONMENT set to: development
+2024-12-24 02:24:09,844 - INFO - Configuration loaded successfully
+2024-12-24 02:29:46,560 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-24 02:29:46,562 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-24 02:29:46,562 - INFO - SECRET_KEY loaded successfully
+2024-12-24 02:29:46,563 - INFO - ALGORITHM set to: HS256
+2024-12-24 02:29:46,563 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-24 02:29:46,564 - INFO - MONGO_URI set to: mongodb+srv://okem:crystalbet123@cluster0.ybutb.mongodb.net/crystalbet?retryWrites=true&w=majority&appName=Cluster0
+2024-12-24 02:29:46,564 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-24 02:29:46,566 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-24 02:29:46,567 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-24 02:29:46,569 - INFO - ENVIRONMENT set to: development
+2024-12-24 02:29:46,570 - INFO - Configuration loaded successfully
+2024-12-24 02:34:09,130 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-24 02:34:09,132 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-24 02:34:09,133 - INFO - SECRET_KEY loaded successfully
+2024-12-24 02:34:09,134 - INFO - ALGORITHM set to: HS256
+2024-12-24 02:34:09,135 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-24 02:34:09,135 - INFO - MONGO_URI set to: mongodb+srv://okem:crystalbet123@cluster0.ybutb.mongodb.net/crystalbet?retryWrites=true&w=majority&appName=Cluster0
+2024-12-24 02:34:09,136 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-24 02:34:09,137 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-24 02:34:09,137 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-24 02:34:09,138 - INFO - ENVIRONMENT set to: development
+2024-12-24 02:34:09,139 - INFO - Configuration loaded successfully
+2024-12-24 02:34:24,026 - INFO - Connected to MongoDB.
+2024-12-24 02:34:34,418 - WARNING - 404 Not Found at http://127.0.0.1:8000/favicon.ico
+2024-12-24 02:35:13,625 - WARNING - 404 Not Found at http://127.0.0.1:8000/users
+2024-12-24 02:37:20,797 - WARNING - 404 Not Found at http://127.0.0.1:8000/docs
+2024-12-24 02:37:45,049 - WARNING - 404 Not Found at http://127.0.0.1:8000/redoc
+2024-12-24 02:38:45,104 - WARNING - 404 Not Found at http://127.0.0.1:8000/docs
+2024-12-24 02:41:27,267 - WARNING - 404 Not Found at http://127.0.0.1:8000/redoc
+2024-12-24 02:45:51,722 - ERROR - Error during login: SSL handshake failed: cluster0-shard-00-00.ybutb.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: cluster0-shard-00-02.ybutb.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: cluster0-shard-00-01.ybutb.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 676a0f9fce94c3d13785f500, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.ybutb.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: cluster0-shard-00-00.ybutb.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('cluster0-shard-00-01.ybutb.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: cluster0-shard-00-01.ybutb.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('cluster0-shard-00-02.ybutb.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: cluster0-shard-00-02.ybutb.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2024-12-24 02:45:51,731 - ERROR - HTTP error at http://127.0.0.1:8000/api/auth/token: Internal Server Error during login
+2024-12-24 02:55:25,261 - INFO - MongoDB connection closed.
+2024-12-24 02:55:43,076 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-24 02:55:43,078 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-24 02:55:43,078 - INFO - SECRET_KEY loaded successfully
+2024-12-24 02:55:43,079 - INFO - ALGORITHM set to: HS256
+2024-12-24 02:55:43,080 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-24 02:55:43,081 - INFO - MONGO_URI set to: mongodb+srv://okem:crystalbet123@cluster0.ybutb.mongodb.net/crystalbet?retryWrites=true&w=majority&appName=Cluster0
+2024-12-24 02:55:43,082 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-24 02:55:43,083 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-24 02:55:43,084 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-24 02:55:43,085 - INFO - ENVIRONMENT set to: development
+2024-12-24 02:55:43,086 - INFO - Configuration loaded successfully
+2024-12-24 02:55:56,491 - INFO - Connected to MongoDB.
+2024-12-24 02:56:46,942 - INFO - MongoDB connection closed.
