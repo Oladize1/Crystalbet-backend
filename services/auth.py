@@ -20,15 +20,31 @@ def raise_http_exception(status_code, detail):
 
 # Create a new user
 async def create_user(db, user: UserCreate):
+    hashed_password = pwd_context.hash(user.password)
+    user_data = {
+        "email": user.email,
+        "username": user.username,
+        "password": hashed_password,
+        # Add any other fields as needed
+    }
+    result = await db["users"].insert_one(user_data)
+    return result
     logger.info(f"Creating user with email: {user.email} and username: {user.username}")
 
-    # Check if the email or username is already registered
+    # Check for duplicate users
     existing_user = await db["users"].find_one({"$or": [{"email": user.email}, {"username": user.username}]})
     if existing_user:
+        logger.warning(f"Duplicate user found: {existing_user}")
         raise_http_exception(status.HTTP_400_BAD_REQUEST, "Email or username is already registered.")
 
-    # Hash the password and create user data
-    hashed_password = hash_password(user.password)
+    # Hash the password
+    try:
+        hashed_password = hash_password(user.password)
+    except Exception as e:
+        logger.error(f"Error hashing password: {e}")
+        raise_http_exception(status.HTTP_500_INTERNAL_SERVER_ERROR, "Password hashing failed.")
+
+    # Prepare user data
     user_data = {
         "username": user.username,
         "email": user.email,
@@ -37,28 +53,28 @@ async def create_user(db, user: UserCreate):
         "is_active": True,
         "is_superuser": False,
     }
+    logger.info(f"Prepared user data: {user_data}")
 
-    # Insert user data into the database and return the user
+    # Insert into database
     try:
         result = await db["users"].insert_one(user_data)
         user_data["_id"] = str(result.inserted_id)
-        return UserInDB(**user_data)
+        logger.info(f"User inserted successfully with ID: {result.inserted_id}")
+        return UserInDB(**user_data)  # Ensure this matches your model
     except Exception as e:
-        logger.error(f"Error inserting user: {e}")
+        logger.error(f"Database insertion error: {e}")
         raise_http_exception(status.HTTP_500_INTERNAL_SERVER_ERROR, "Database insertion error")
 
 # Authenticate user by either email or username and password
 async def authenticate_user(db, identifier: str, password: str):
     # Check for user by either email or username
     user = await db["users"].find_one({"$or": [{"email": identifier}, {"username": identifier}]})
-    if user:
-        if verify_password(password, user["hashed_password"]):
-            logger.info(f"User authenticated: {identifier}")
-            return UserInDB(**user)
-        else:
-            raise_http_exception(status.HTTP_401_UNAUTHORIZED, "Incorrect password.")
-    else:
-        raise_http_exception(status.HTTP_404_NOT_FOUND, "User not found with provided email or username.")
+    if user and verify_password(password, user["hashed_password"]):
+        logger.info(f"User authenticated: {identifier}")
+        return UserInDB(**user)
+    
+    logger.warning(f"Authentication failed for user: {identifier}")
+    raise_http_exception(status.HTTP_401_UNAUTHORIZED, "Incorrect password or user not found.")
 
 # Send password reset email
 async def send_reset_password_email(email: EmailStr, db):
