@@ -32,25 +32,29 @@ class UserInDB(BaseModel):
 
     class Config:
         allow_population_by_field_name = True  # Enables usage of "id" instead of "_id"
+        json_encoders = {
+            ObjectId: str  # Convert ObjectId to string for serialization
+        }
 
-# Model for User Creation
+# Model for User Creation (input data for user registration)
 class UserCreate(BaseModel):
     username: str
     email: EmailStr
     password: str
 
-# Model for User Update
+# Model for User Update (input data for updating existing user information)
 class UserUpdate(BaseModel):
     username: Optional[str] = None
     email: Optional[EmailStr] = None
     password: Optional[str] = None
 
-# Model for User Login (we will not include the password in the response)
+# Model for User Login (input data for logging in, but we won't include the password in the response)
 class UserLogin(BaseModel):
     email: EmailStr
     password: str
 
-# Model for resetting user password (to be used for reset flows)
+# Model for resetting user password (input data for password reset flow)
 class UserPasswordReset(BaseModel):
     password: str
     confirm_password: str
+

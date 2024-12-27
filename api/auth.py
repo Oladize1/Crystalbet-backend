@@ -6,6 +6,7 @@ from schemas.auth import Token, UserCreate, PasswordResetRequest, PasswordReset,
 from db.mongodb import get_db
 from utils.token import decode_token
 import logging
+from datetime import datetime
 
 router = APIRouter()
 
@@ -27,15 +28,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db=Depends(get
             "$or": [{"username": form_data.username}, {"email": form_data.username}]
         })
 
-        if not user:
-            logger.warning(f"Failed login attempt for username/email: {form_data.username}")
-            raise HTTPException(
-                status_code=status.HTTP_401_UNAUTHORIZED,
-                detail="Incorrect username, email or password"
-            )
-        
-        # Authenticate the user (verify password)
-        if not verify_password(form_data.password, user["password"]):
+        if not user or not verify_password(form_data.password, user["password"]):
             logger.warning(f"Failed login attempt for username/email: {form_data.username}")
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
@@ -59,26 +52,40 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db=Depends(get
 async def register_user(user: UserCreate, db=Depends(get_db)):
     logger.info(f"Attempting to register user with email: {user.email}")
     try:
-        # Check if email already exists
-        if await db["users"].find_one({"email": user.email}):
-            error_message = f"Email is already registered. (Email: '{user.email}')"
+        # Check for existing email or username in one query to improve efficiency
+        existing_user = await db["users"].find_one({
+            "$or": [{"email": user.email}, {"username": user.username}]
+        })
+        
+        if existing_user:
+            error_message = f"Email or Username already taken. (Email: '{user.email}', Username: '{user.username}')"
             logger.error(f"Registration error: {error_message}")
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=error_message)
 
-        # Check if username already exists
-        if await db["users"].find_one({"username": user.username}):
-            error_message = f"Username is already taken. (Username: '{user.username}')"
-            logger.error(f"Registration error: {error_message}")
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=error_message)
+        # Hash the password before storing it
+        hashed_password = hash_password(user.password)
 
-        # Proceed to create user if no issues found
-        new_user = await create_user(db, user)
+        # Create user data
+        user_data = {
+            "username": user.username,
+            "email": user.email,
+            "password": hashed_password,
+            "created_at": datetime.utcnow(),
+            "is_active": True,
+            "is_superuser": False,
+        }
+
+        # Insert user data into the database
+        result = await db["users"].insert_one(user_data)
+        user_data["_id"] = str(result.inserted_id)
+        
         logger.info(f"User registered successfully: {user.email}")
-        return {"message": "User registered successfully", "user_id": new_user.id}
+        
+        return {"message": "User registered successfully", "user_id": user_data["_id"]}
 
-    except HTTPException:
+    except HTTPException as e:
         # Directly re-raise without re-logging
-        raise
+        raise e
     except Exception as e:
         # Log unexpected errors
         logger.error(f"Unexpected error during registration: {e}")

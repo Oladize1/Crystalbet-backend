@@ -15066,3 +15066,262 @@ id
 2024-12-24 02:55:43,086 - INFO - Configuration loaded successfully
 2024-12-24 02:55:56,491 - INFO - Connected to MongoDB.
 2024-12-24 02:56:46,942 - INFO - MongoDB connection closed.
+2024-12-27 04:09:42,834 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 04:09:42,835 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 04:09:42,836 - INFO - SECRET_KEY loaded successfully
+2024-12-27 04:09:42,837 - INFO - ALGORITHM set to: HS256
+2024-12-27 04:09:42,837 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 04:09:42,838 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 04:09:42,838 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 04:09:42,839 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 04:09:42,840 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 04:09:42,840 - INFO - ENVIRONMENT set to: development
+2024-12-27 04:09:42,841 - INFO - Configuration loaded successfully
+2024-12-27 04:10:03,469 - INFO - Connected to MongoDB.
+2024-12-27 04:11:23,127 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 04:11:24,823 - INFO - Creating user with email: testingr@example.com and username: testing
+2024-12-27 04:11:25,568 - ERROR - Error inserting user: 1 validation error for UserInDB
+id
+  Field required [type=missing, input_value={'username': 'testing', '...6e1add90dabba7c14235f4'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2024-12-27 04:11:25,572 - ERROR - HTTPException: 500 - Database insertion error
+2024-12-27 04:11:25,573 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Database insertion error
+2024-12-27 04:31:29,663 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 04:31:29,892 - ERROR - Registration error: Email is already registered. (Email: 'testingr@example.com')
+2024-12-27 04:31:29,901 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Email is already registered. (Email: 'testingr@example.com')
+2024-12-27 04:31:34,907 - INFO - MongoDB connection closed.
+2024-12-27 04:31:51,406 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 04:31:51,407 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 04:31:51,408 - INFO - SECRET_KEY loaded successfully
+2024-12-27 04:31:51,409 - INFO - ALGORITHM set to: HS256
+2024-12-27 04:31:51,410 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 04:31:51,410 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 04:31:51,412 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 04:31:51,412 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 04:31:51,413 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 04:31:51,414 - INFO - ENVIRONMENT set to: development
+2024-12-27 04:31:51,415 - INFO - Configuration loaded successfully
+2024-12-27 04:32:26,905 - INFO - Connected to MongoDB.
+2024-12-27 04:36:01,967 - INFO - MongoDB connection closed.
+2024-12-27 04:36:19,744 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 04:36:19,745 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 04:36:19,746 - INFO - SECRET_KEY loaded successfully
+2024-12-27 04:36:19,747 - INFO - ALGORITHM set to: HS256
+2024-12-27 04:36:19,748 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 04:36:19,749 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 04:36:19,750 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 04:36:19,751 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 04:36:19,752 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 04:36:19,755 - INFO - ENVIRONMENT set to: development
+2024-12-27 04:36:19,756 - INFO - Configuration loaded successfully
+2024-12-27 04:36:44,495 - INFO - Connected to MongoDB.
+2024-12-27 04:36:44,714 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 04:36:47,652 - ERROR - Registration error: Email is already registered. (Email: 'testingr@example.com')
+2024-12-27 04:36:47,653 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Email is already registered. (Email: 'testingr@example.com')
+2024-12-27 04:37:37,412 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 04:37:37,702 - INFO - Creating user with email: testingr@example.com and username: testing
+2024-12-27 04:37:38,403 - INFO - Prepared user data: {'username': 'testing', 'email': 'testingr@example.com', 'hashed_password': '$2b$12$kZgc.0R67sj2fk88QsNTAuWtynPxBXTxMfQMk109rd5sKfV0hb4Se', 'created_at': datetime.datetime(2024, 12, 27, 3, 37, 38, 403555), 'is_active': True, 'is_superuser': False}
+2024-12-27 04:37:38,566 - INFO - User inserted successfully with ID: 676e21021f0dcea2eb9a65be
+2024-12-27 04:37:38,570 - ERROR - Database insertion error: 1 validation error for UserInDB
+id
+  Field required [type=missing, input_value={'username': 'testing', '...6e21021f0dcea2eb9a65be'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2024-12-27 04:37:38,571 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Database insertion error
+2024-12-27 04:38:58,455 - INFO - MongoDB connection closed.
+2024-12-27 04:39:14,564 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 04:39:14,565 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 04:39:14,567 - INFO - SECRET_KEY loaded successfully
+2024-12-27 04:39:14,569 - INFO - ALGORITHM set to: HS256
+2024-12-27 04:39:14,570 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 04:39:14,571 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 04:39:14,576 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 04:39:14,580 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 04:39:14,582 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 04:39:14,583 - INFO - ENVIRONMENT set to: development
+2024-12-27 04:39:14,586 - INFO - Configuration loaded successfully
+2024-12-27 04:39:34,165 - INFO - Connected to MongoDB.
+2024-12-27 04:39:43,693 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 04:39:45,358 - INFO - Creating user with email: testingr@example.com and username: testing
+2024-12-27 04:39:46,080 - INFO - Prepared user data: {'username': 'testing', 'email': 'testingr@example.com', 'hashed_password': '$2b$12$Uti1RJV/g87KA7v8fGoCHOBSfL8mBJJEgiH8ZmQ2nuFMEarrhNCZe', 'created_at': datetime.datetime(2024, 12, 27, 3, 39, 46, 80323), 'is_active': True, 'is_superuser': False}
+2024-12-27 04:39:46,234 - INFO - User inserted successfully with ID: 676e21820b8b395deffd2cbb
+2024-12-27 04:39:46,236 - ERROR - Database insertion error: 1 validation error for UserInDB
+id
+  Field required [type=missing, input_value={'username': 'testing', '...6e21820b8b395deffd2cbb'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2024-12-27 04:39:46,236 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Database insertion error
+2024-12-27 04:53:35,016 - INFO - MongoDB connection closed.
+2024-12-27 04:54:02,094 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 04:54:02,098 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 04:54:02,099 - INFO - SECRET_KEY loaded successfully
+2024-12-27 04:54:02,103 - INFO - ALGORITHM set to: HS256
+2024-12-27 04:54:02,105 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 04:54:02,106 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 04:54:02,110 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 04:54:02,114 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 04:54:02,124 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 04:54:02,127 - INFO - ENVIRONMENT set to: development
+2024-12-27 04:54:02,128 - INFO - Configuration loaded successfully
+2024-12-27 04:54:27,771 - INFO - Connected to MongoDB.
+2024-12-27 04:55:06,898 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 04:55:09,274 - INFO - Creating user with email: testingr@example.com and username: testing
+2024-12-27 04:55:10,801 - INFO - Prepared user data: {'username': 'testing', 'email': 'testingr@example.com', 'hashed_password': '$2b$12$wN1Ym.FHyqbQQHAWRKKym.eLIAoltiSghCGzlHJuM01NxW9ryTE8.', 'created_at': datetime.datetime(2024, 12, 27, 3, 55, 10, 801551), 'is_active': True, 'is_superuser': False}
+2024-12-27 04:55:11,124 - INFO - User inserted successfully with ID: 676e251eab1aba7482cc0a58
+2024-12-27 04:55:11,125 - ERROR - Database insertion error: 1 validation error for UserInDB
+id
+  Field required [type=missing, input_value={'username': 'testing', '...6e251eab1aba7482cc0a58'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2024-12-27 04:55:11,126 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Database insertion error
+2024-12-27 04:59:18,733 - INFO - MongoDB connection closed.
+2024-12-27 04:59:34,157 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 04:59:34,159 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 04:59:34,160 - INFO - SECRET_KEY loaded successfully
+2024-12-27 04:59:34,163 - INFO - ALGORITHM set to: HS256
+2024-12-27 04:59:34,167 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 04:59:34,172 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 04:59:34,178 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 04:59:34,189 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 04:59:34,193 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 04:59:34,196 - INFO - ENVIRONMENT set to: development
+2024-12-27 04:59:34,197 - INFO - Configuration loaded successfully
+2024-12-27 05:00:02,745 - INFO - Connected to MongoDB.
+2024-12-27 05:00:02,751 - INFO - MongoDB connection closed.
+2024-12-27 05:00:22,292 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 05:00:22,294 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 05:00:22,294 - INFO - SECRET_KEY loaded successfully
+2024-12-27 05:00:22,295 - INFO - ALGORITHM set to: HS256
+2024-12-27 05:00:22,296 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 05:00:22,297 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 05:00:22,298 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 05:00:22,299 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 05:00:22,300 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 05:00:22,300 - INFO - ENVIRONMENT set to: development
+2024-12-27 05:00:22,302 - INFO - Configuration loaded successfully
+2024-12-27 05:00:39,474 - INFO - Connected to MongoDB.
+2024-12-27 05:00:47,476 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 05:00:49,370 - INFO - Creating user with email: testingr@example.com and username: testing
+2024-12-27 05:00:50,112 - INFO - Prepared user data: {'username': 'testing', 'email': 'testingr@example.com', 'hashed_password': '$2b$12$L1aKBe0d7NKA0OqNILrC1OwaKPdUgPtsKyLkl5fMO6Av9q9miOtyO', 'created_at': datetime.datetime(2024, 12, 27, 4, 0, 50, 112775), 'is_active': True, 'is_superuser': False}
+2024-12-27 05:00:50,261 - INFO - User inserted successfully with ID: 676e2672fed6ace4e2b56001
+2024-12-27 05:00:50,263 - ERROR - Database insertion error: 1 validation error for UserInDB
+id
+  Field required [type=missing, input_value={'username': 'testing', '...6e2672fed6ace4e2b56001'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2024-12-27 05:00:50,264 - ERROR - HTTPException: 500 - Database insertion error
+2024-12-27 05:00:50,265 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Database insertion error
+2024-12-27 05:04:59,809 - INFO - MongoDB connection closed.
+2024-12-27 05:05:19,679 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 05:05:19,681 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 05:05:19,682 - INFO - SECRET_KEY loaded successfully
+2024-12-27 05:05:19,683 - INFO - ALGORITHM set to: HS256
+2024-12-27 05:05:19,684 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 05:05:19,685 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 05:05:19,686 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 05:05:19,689 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 05:05:19,690 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 05:05:19,691 - INFO - ENVIRONMENT set to: development
+2024-12-27 05:05:19,692 - INFO - Configuration loaded successfully
+2024-12-27 05:05:41,291 - INFO - Connected to MongoDB.
+2024-12-27 05:05:41,503 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 05:05:43,738 - ERROR - Unexpected error during registration: name 'datetime' is not defined
+2024-12-27 05:05:43,740 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Failed to register user due to an internal error.
+2024-12-27 05:09:39,276 - INFO - MongoDB connection closed.
+2024-12-27 05:09:53,722 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 05:09:53,724 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 05:09:53,725 - INFO - SECRET_KEY loaded successfully
+2024-12-27 05:09:53,726 - INFO - ALGORITHM set to: HS256
+2024-12-27 05:09:53,727 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 05:09:53,728 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 05:09:53,729 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 05:09:53,733 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 05:09:53,734 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 05:09:53,735 - INFO - ENVIRONMENT set to: development
+2024-12-27 05:09:53,736 - INFO - Configuration loaded successfully
+2024-12-27 05:10:16,467 - INFO - Connected to MongoDB.
+2024-12-27 05:16:42,657 - INFO - MongoDB connection closed.
+2024-12-27 05:16:59,046 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 05:16:59,047 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 05:16:59,048 - INFO - SECRET_KEY loaded successfully
+2024-12-27 05:16:59,050 - INFO - ALGORITHM set to: HS256
+2024-12-27 05:16:59,051 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 05:16:59,057 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 05:16:59,084 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 05:16:59,086 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 05:16:59,088 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 05:16:59,090 - INFO - ENVIRONMENT set to: development
+2024-12-27 05:16:59,090 - INFO - Configuration loaded successfully
+2024-12-27 05:17:22,879 - INFO - Connected to MongoDB.
+2024-12-27 05:18:06,610 - INFO - MongoDB connection closed.
+2024-12-27 05:18:29,805 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 05:18:29,806 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 05:18:29,807 - INFO - SECRET_KEY loaded successfully
+2024-12-27 05:18:29,807 - INFO - ALGORITHM set to: HS256
+2024-12-27 05:18:29,808 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 05:18:29,809 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 05:18:29,810 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 05:18:29,811 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 05:18:29,812 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 05:18:29,814 - INFO - ENVIRONMENT set to: development
+2024-12-27 05:18:29,822 - INFO - Configuration loaded successfully
+2024-12-27 05:18:51,557 - INFO - Connected to MongoDB: crystalbet
+2024-12-27 05:18:51,557 - INFO - Connected to MongoDB.
+2024-12-27 05:19:49,090 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 05:19:51,480 - ERROR - Unexpected error during registration: name 'datetime' is not defined
+2024-12-27 05:19:51,482 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Failed to register user due to an internal error.
+2024-12-27 05:24:09,330 - INFO - Closed MongoDB connection.
+2024-12-27 05:24:09,344 - INFO - MongoDB connection closed.
+2024-12-27 05:24:24,996 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 05:24:24,997 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 05:24:24,998 - INFO - SECRET_KEY loaded successfully
+2024-12-27 05:24:24,999 - INFO - ALGORITHM set to: HS256
+2024-12-27 05:24:24,999 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 05:24:25,000 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 05:24:25,001 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 05:24:25,002 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 05:24:25,003 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 05:24:25,005 - INFO - ENVIRONMENT set to: development
+2024-12-27 05:24:25,006 - INFO - Configuration loaded successfully
+2024-12-27 05:24:53,604 - INFO - Connected to MongoDB: crystalbet
+2024-12-27 05:24:53,605 - INFO - Connected to MongoDB.
+2024-12-27 05:26:18,222 - INFO - Closed MongoDB connection.
+2024-12-27 05:26:18,223 - INFO - MongoDB connection closed.
+2024-12-27 05:26:35,183 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 05:26:35,185 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 05:26:35,187 - INFO - SECRET_KEY loaded successfully
+2024-12-27 05:26:35,189 - INFO - ALGORITHM set to: HS256
+2024-12-27 05:26:35,190 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 05:26:35,191 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 05:26:35,193 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 05:26:35,196 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 05:26:35,197 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 05:26:35,199 - INFO - ENVIRONMENT set to: development
+2024-12-27 05:26:35,202 - INFO - Configuration loaded successfully
+2024-12-27 05:26:57,171 - INFO - Connected to MongoDB: crystalbet
+2024-12-27 05:26:57,171 - INFO - Connected to MongoDB.
+2024-12-27 05:26:57,374 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 05:26:59,211 - ERROR - Unexpected error during registration: name 'pwd_context' is not defined
+2024-12-27 05:26:59,212 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Failed to register user due to an internal error.
+2024-12-27 05:35:59,759 - INFO - Closed MongoDB connection.
+2024-12-27 05:35:59,776 - INFO - MongoDB connection closed.
+2024-12-27 05:36:54,918 - INFO - ALLOW_ORIGINS set to: http://localhost:3000,http://127.0.0.1:3000,http://yourdomain.com
+2024-12-27 05:36:54,930 - INFO - TRUSTED_HOSTS set to: localhost,127.0.0.1,yourdomain.com
+2024-12-27 05:36:54,931 - INFO - SECRET_KEY loaded successfully
+2024-12-27 05:36:54,933 - INFO - ALGORITHM set to: HS256
+2024-12-27 05:36:54,934 - INFO - ACCESS_TOKEN_EXPIRE_MINUTES set to: 30
+2024-12-27 05:36:54,939 - INFO - MONGO_URI set to: mongodb+srv://pamoladize10:iKW68WKpD7qhM2uM@cluster0.1rzyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+2024-12-27 05:36:54,942 - INFO - DATABASE_NAME set to: crystalbet
+2024-12-27 05:36:54,948 - INFO - MAX_POOL_SIZE set to: 100
+2024-12-27 05:36:54,951 - INFO - MIN_POOL_SIZE set to: 10
+2024-12-27 05:36:54,955 - INFO - ENVIRONMENT set to: development
+2024-12-27 05:36:54,959 - INFO - Configuration loaded successfully
+2024-12-27 05:37:48,333 - INFO - Connected to MongoDB: crystalbet
+2024-12-27 05:37:48,334 - INFO - Connected to MongoDB.
+2024-12-27 05:40:37,866 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 05:40:40,247 - INFO - User registered successfully: testingr@example.com
+2024-12-27 05:40:58,911 - INFO - Attempting to register user with email: testingr@example.com
+2024-12-27 05:40:59,052 - ERROR - Registration error: Email or Username already taken. (Email: 'testingr@example.com', Username: 'testing')
+2024-12-27 05:40:59,054 - ERROR - HTTP error at http://localhost:8000/api/auth/register: Email or Username already taken. (Email: 'testingr@example.com', Username: 'testing')
+2024-12-27 05:41:21,307 - INFO - Attempting to register user with email: testing2r@example.com
+2024-12-27 05:41:22,180 - INFO - User registered successfully: testing2r@example.com
+2024-12-27 05:43:42,882 - INFO - User testing logged in successfully.
+2024-12-27 05:44:24,109 - ERROR - HTTP error at http://localhost:8000/api/auth/me: Not authenticated
+2024-12-27 05:46:00,173 - INFO - Closed MongoDB connection.
+2024-12-27 05:46:00,178 - INFO - MongoDB connection closed.
